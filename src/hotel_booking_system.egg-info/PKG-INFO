@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: hotel_booking_system
+Version: 0.1.0
+Summary: Hotel Booking System for Crown Hotels
+Requires-Python: >=3.13
+Requires-Dist: fastapi
+Requires-Dist: uvicorn[standard]
+Requires-Dist: sqlalchemy
+Requires-Dist: pydantic
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: pyre-check; extra == "dev"

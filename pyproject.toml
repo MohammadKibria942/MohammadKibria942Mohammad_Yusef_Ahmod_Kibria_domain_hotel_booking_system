@@ -1,0 +1,29 @@
+[project]
+name = "hotel_booking_system"
+version = "0.1.0"
+description = "Hotel Booking System for Crown Hotels"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "sqlalchemy",
+    "pydantic",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "ruff",
+    "pyre-check"
+]
+
+[tool.pytest.ini_options]
+addopts = "--cov=src --cov-report=term-missing"
+
+[tool.ruff]
+select = ["E", "F", "W"]
+line-length = 100
+
+[tool.pyre]
+source-directories = ["src"]

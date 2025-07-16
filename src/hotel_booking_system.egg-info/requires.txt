@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic
+
+[dev]
+pytest
+pytest-cov
+ruff
+pyre-check
